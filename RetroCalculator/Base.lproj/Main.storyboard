@@ -257,22 +257,55 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjt-yH-9aG">
+                                <rect key="frame" x="262" y="200" width="77" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="JQA-fL-kQe"/>
+                                    <constraint firstAttribute="height" constant="26" id="KS1-jc-QGt"/>
+                                    <constraint firstAttribute="width" constant="77" id="Zpk-3H-SeU"/>
+                                    <constraint firstAttribute="height" constant="26" id="mQJ-tZ-UEY"/>
+                                </constraints>
+                                <state key="normal" image="clear"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="JQA-fL-kQe"/>
+                                        <exclude reference="KS1-jc-QGt"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="clearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Cu-Nu-aYQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ehF-jf-OBs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4r5-LV-W0I"/>
                             <constraint firstItem="kuc-Wu-SiL" firstAttribute="centerX" secondItem="RU2-dg-2Ax" secondAttribute="centerX" id="Br8-tV-bc2"/>
+                            <constraint firstItem="rjt-yH-9aG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GBu-NZ-XZl"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yMu-SY-zHn" secondAttribute="bottom" id="I6N-kA-Umb"/>
                             <constraint firstItem="Kcn-kL-ECp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="J4q-IW-buW"/>
                             <constraint firstItem="zSC-7X-oOi" firstAttribute="top" secondItem="ehF-jf-OBs" secondAttribute="top" constant="50" id="PKu-Mj-DXm"/>
                             <constraint firstAttribute="trailing" secondItem="Kcn-kL-ECp" secondAttribute="trailing" id="R08-r0-3W2"/>
+                            <constraint firstItem="ehF-jf-OBs" firstAttribute="top" secondItem="rjt-yH-9aG" secondAttribute="bottom" constant="14" id="Ucw-Id-hgf"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kcn-kL-ECp" secondAttribute="bottom" id="ahM-75-754"/>
                             <constraint firstItem="Kcn-kL-ECp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bQK-gf-qNO"/>
                             <constraint firstItem="ehF-jf-OBs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bjI-oA-cde"/>
                             <constraint firstItem="ehF-jf-OBs" firstAttribute="trailing" secondItem="zSC-7X-oOi" secondAttribute="trailing" constant="17" id="f4i-w6-bGX"/>
+                            <constraint firstItem="kuc-Wu-SiL" firstAttribute="top" secondItem="rjt-yH-9aG" secondAttribute="bottom" id="mUn-ri-4H9"/>
+                            <constraint firstItem="rjt-yH-9aG" firstAttribute="top" secondItem="zSC-7X-oOi" secondAttribute="bottom" constant="10" id="r1w-rZ-YgF"/>
                             <constraint firstItem="ehF-jf-OBs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tDj-g4-ov8"/>
                             <constraint firstItem="kuc-Wu-SiL" firstAttribute="centerY" secondItem="RU2-dg-2Ax" secondAttribute="centerY" id="wIL-Jl-3aU"/>
+                            <constraint firstItem="rjt-yH-9aG" firstAttribute="top" secondItem="zSC-7X-oOi" secondAttribute="bottom" constant="12" id="whY-Uo-9WO"/>
+                            <constraint firstItem="rjt-yH-9aG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zas-4G-ckc"/>
+                            <constraint firstItem="rjt-yH-9aG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="zwA-61-99v"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ucw-Id-hgf"/>
+                                <exclude reference="zas-4G-ckc"/>
+                                <exclude reference="zwA-61-99v"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="outputLbl" destination="zSC-7X-oOi" id="phj-Fv-qeQ"/>
@@ -326,6 +359,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>

@@ -33,6 +33,7 @@ class ViewController: UIViewController {
     
     var result = ""
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,9 +48,20 @@ class ViewController: UIViewController {
         }
     
     }
+    
+    @IBAction func clearPressed(btn: UIButton!) {
+        runningNumber = "0"
+        leftValString = ""
+        rightValString = ""
+        outputLbl.text = runningNumber
+        currentOperation = Operation.Empty
+        playSound()
+    }
+
 
     @IBAction func numberPressed(btn: UIButton!) {
         btnSound.play()
+        runningNumber = ""
         runningNumber += "\(btn.tag)"
         outputLbl.text = runningNumber
         playSound()
